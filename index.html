@@ -1,161 +1,351 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Javier Morlana</title>
+  <meta name="author" content="Javier Morlana">
+  <meta name="description" content="Building Spatial AI for endoscopy. PhD in SLAM and visual place recognition for colonoscopy at Universidad de Zaragoza. Co-founder at EndoCartoScope.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jmorlana.github.io/">
+  <meta property="og:title" content="Javier Morlana">
+  <meta property="og:description" content="Building Spatial AI for endoscopy. PhD in SLAM for endoscopy. Co-founder at EndoCartoScope.">
+  <meta property="og:image" content="https://jmorlana.github.io/images/og-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="images/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <!-- Only hide the timelines for animation when we can actually reveal them again. -->
+  <script>if ('IntersectionObserver' in window) document.documentElement.classList.add('js');</script>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JGJP9W0E2J"></script>
   <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JGJP9W0E2J');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JGJP9W0E2J');
   </script>
-
-  <title>Javier Morlana</title>
-  
-  <meta name="author" content="Javier Morlana">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  
 </head>
 
 <body>
-  
+  <a class="skip" href="#main">Skip to content</a>
 
-  
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <strong><em><name>Javier Morlana</name></em></strong>
-              </p>
-              <p>I am a PhD Student at the University of Zaragoza. My research goal is to perform SLAM and Visual Place Recognition (VPR) in the specific domain of colonoscopies, with the aid of Deep Learning techniques.
-              </p>
-              <p>
-                I am pursuing my PhD (finishing by EOY 2024) under the guidance of <a href="https://scholar.google.es/citations?user=D99JRxwAAAAJ&hl">Prof. J.M.M Montiel</a> at the <a href="http://robots.unizar.es/">Robotics Lab</a> in the <a href="http://www.unizar.es/university-zaragoza">Universidad de Zaragoza</a>. My work experience includes research internships at Leica Geosystems and Google, both related to SLAM algorithms.       
-              </p>
-              <p style="text-align:center">
-                <a href="mailto:jmorlana@unizar.es">Email</a> &nbsp/&nbsp
-                <a href="https://www.linkedin.com/in/javiermorlana/">LinkedIn</a> &nbsp/&nbsp
-                <!-- <a href="data/JonBarron-CV.pdf">CV</a> &nbsp/&nbsp -->
-                <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp/&nbsp -->
-                <a href="https://scholar.google.es/citations?user=1-DJMB8AAAAJ&hl">Google Scholar</a> &nbsp/&nbsp                
-                <a href="https://github.com/jmorlana/">Github</a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/profile.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/profile.png" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          
-          
-            
-<!-- ##### Paper 3 ##### -->
-          <tr onmouseout="edam_stop()" onmouseover="edam_start()">
-            <td width="33%" valign="top">
-                <img src="images/colonslam.png"  width="100%" style="border-style: none">
-              </td>
-            
-            <td style="padding:20px;width:75%;vertical-align:middle">              
-                <strong><em><papertitle>Topological SLAM in colonoscopies leveraging deep features and topological priors</papertitle></em></strong>
-              <br>              
-              <strong>Javier Morlana</strong>, Juan D. Tardós, J.M.M. Montiel           
-              <br>
-              <a href="https://conferences.miccai.org/2024/"><em>MICCAI</em></a>, 2024   
-              <br>
-              <p></p>
-              <p>The first topological SLAM able to builds rich graphs of the colon. It leverages on the good short-term covisibility of a metric SLAM and the long-term VPR capabilities of deep features. Using topological priors, it is able to build an accurate topological map, which is a key step towards navigation assistance and disease monitoring.
+  <!-- Brand marks from Simple Icons (simpleicons.org, CC0); envelope from Bootstrap Icons (MIT). -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-jm" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M32 16 C32 44 34 66 25 76 C17 84 6 74 14 66 C22 58 36 66 42 78 C43 58 47 38 50 20 C53 42 57 58 63 55 C70 51 74 36 79 26 C80 46 82 64 87 78 C89 85 94 83 96 76"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 16 16"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/></symbol>
+    <symbol id="i-scholar" viewBox="0 0 24 24"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+  </svg>
 
+  <div class="topbar">
+    <div class="topbar-in">
+      <a class="tb-name" href="#top" aria-label="Top of page"><svg class="tb-mark" aria-hidden="true"><use href="#i-jm"/></svg></a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#now" class="on">Now</a>
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="blog/index.html">Blog</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="page">
+
+    <header class="masthead" id="top">
+      <h1 class="name">Javier Morlana</h1>
+      <p class="role">Co-founder at EndoCartoScope · Universidad de Zaragoza</p>
+    </header>
+
+    <main id="main">
+
+      <div class="intro">
+        <div>
+          <p class="lead">Building Spatial AI for endoscopy.</p>
+          <p>PhD in SLAM and visual place recognition for colonoscopy at the <a href="http://robots.unizar.es/" target="_blank" rel="noopener">Robotics Lab</a>, under <a href="https://scholar.google.es/citations?user=D99JRxwAAAAJ&amp;hl" target="_blank" rel="noopener">J.M.M. Montiel</a>. Research internships at Google and Leica Geosystems, both on visual-inertial SLAM.</p>
+          <div class="icons">
+            <a class="ic cv" href="cv.pdf" target="_blank" rel="noopener">CV</a>
+            <a class="ic" href="mailto:jmorlana@unizar.es" aria-label="Email"><svg><use href="#i-mail"/></svg></a>
+            <a class="ic" href="https://scholar.google.es/citations?user=1-DJMB8AAAAJ&amp;hl" aria-label="Google Scholar" target="_blank" rel="noopener"><svg><use href="#i-scholar"/></svg></a>
+            <a class="ic" href="https://github.com/jmorlana/" aria-label="GitHub" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg></a>
+            <a class="ic" href="https://www.linkedin.com/in/javiermorlana/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg><use href="#i-linkedin"/></svg></a>
+          </div>
+        </div>
+        <img class="portrait" src="images/web/profile.jpg" width="320" height="320" alt="Javier Morlana">
+      </div>
+
+      <section id="now">
+        <h2>Now</h2>
+        <div class="now">
+          <p class="kicker">EIC-funded · 2025-2028</p>
+          <p class="title">EndoCartoScope</p>
+          <p>Spatial AI for medical endoscopy: we build a per-patient 3D map of the cavity while localizing the endoscope inside it, using only the video of a standard endoscope, enough to tell how much of the mucosa was inspected, guide navigation and measure lesions.</p>
+          <p class="meta">From TRL4 to TRL6, on the way to a spin-off.</p>
+          <p class="links"><a href="https://endocartoscope.eu" target="_blank" rel="noopener">Project site</a></p>
+        </div>
+      </section>
+
+      <section id="news">
+        <h2>News</h2>
+        <ul class="news">
+          <li>
+            <div class="who"><img class="mark" src="images/logos/miccai2026.png" width="144" height="144" alt=""><span class="date">Sep 2026</span></div>
+            <div>
+              <p class="title">Organizing CLiMB at MICCAI 2026</p>
+              <p class="meta">The Colonoscopy Localization and Mapping Benchmark, a sub-challenge of EndoVis. Challenge day 27 September, Strasbourg.</p>
+              <p class="links"><a href="https://www.synapse.org/Synapse:syn74370700/wiki/" target="_blank" rel="noopener">Challenge site</a><a href="https://endovis.org/" target="_blank" rel="noopener">EndoVis</a></p>
+            </div>
+          </li>
+          <li>
+            <div class="who"><img class="mark" src="images/logos/dcami.png" width="144" height="144" alt=""><span class="date">Sep 2026</span></div>
+            <div>
+              <p class="title">Organizing DCA-MI at ECCV 2026</p>
+              <p class="meta">Second edition of the workshop on data curation and augmentation in medical imaging. 9 September, Malmö.</p>
+              <p class="links"><a href="https://dca-in-mi.github.io/" target="_blank" rel="noopener">Workshop site</a></p>
+            </div>
+          </li>
+          <li>
+            <div class="who"><img class="mark" src="images/logos/endocartoscope.png" width="144" height="144" alt=""><span class="date">Jul 2025</span></div>
+            <div>
+              <p class="title">EndoCartoScope starts</p>
+              <p class="meta">EIC-funded project at Universidad de Zaragoza. I join as co-founder.</p>
+              <p class="links"><a href="https://endocartoscope.eu" target="_blank" rel="noopener">Project site</a></p>
+            </div>
+          </li>
+          <li>
+            <div class="who"><img class="mark" src="images/logos/unizar.png" width="144" height="144" alt=""><span class="date">Jun 2025</span></div>
+            <div>
+              <p class="title">PhD defended</p>
+              <p class="meta">SLAM and visual place recognition for colonoscopy, Universidad de Zaragoza.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="publications">
+        <h2>Publications</h2>
+        <div class="cards">
+
+          <article class="card">
+            <div class="fig"><img src="images/web/colonslam.jpg" width="1400" height="607" loading="lazy" decoding="async" alt="ColonSLAM: a metric SLAM produces a linear graph of 3D submaps, which becomes a graph with covisibility relationships."></div>
+            <div class="body">
+              <h3>Topological SLAM in colonoscopies leveraging deep features and topological priors</h3>
+              <p class="authors"><b>Javier Morlana</b>, Juan D. Tardós, J.M.M. Montiel</p>
+              <p class="venue">MICCAI 2024</p>
+              <p class="links">
+                <a href="https://arxiv.org/abs/2409.16806" target="_blank" rel="noopener">Paper</a>
+                <a href="https://github.com/endomapper/ColonSLAM" target="_blank" rel="noopener">Code</a>
+                <a href="https://link.springer.com/chapter/10.1007/978-3-031-72120-5_68" target="_blank" rel="noopener">Publisher</a>
               </p>
-            </td>
-          </tr>        
-          
-          
+            </div>
+          </article>
 
-<!-- ##### Paper 2 ##### -->
-          <tr onmouseout="edam_stop()" onmouseover="edam_start()">
-            <td width="33%" valign="top">
-                <img src="images/colonmapper.png"  width="100%" style="border-style: none">
-              </td>
-            
-            <td style="padding:20px;width:75%;vertical-align:middle">              
-                <strong><em><papertitle>ColonMapper: topological mapping and localization for colonoscopy</papertitle></em></strong>
-              </a>
-              <br>
-              <strong>Javier Morlana</strong>, Juan D. Tardós, J.M.M. Montiel   
-              <br>
-              <a href="https://2024.ieee-icra.org/"><em>ICRA</em></a>, 2024  
-              <br>
-              <p></p>
-              <p>The first topological mapping and localization system for the whole colon. In the first stage, it builds linear topological map of the colon from a first sequence of a patient. In a second stage, it localizes another sequence of the same patient against the previously built map.
-
+          <article class="card">
+            <div class="fig"><img src="images/web/colonmapper.jpg" width="1400" height="618" loading="lazy" decoding="async" alt="ColonMapper: a topological map of the colon is built from one sequence, then a second sequence is localized against it."></div>
+            <div class="body">
+              <h3>ColonMapper: topological mapping and localization for colonoscopy</h3>
+              <p class="authors"><b>Javier Morlana</b>, Juan D. Tardós, J.M.M. Montiel</p>
+              <p class="venue">ICRA 2024</p>
+              <p class="links">
+                <a href="https://arxiv.org/abs/2305.05546" target="_blank" rel="noopener">Paper</a>
+                <a href="https://github.com/jmorlana/ColonMapper" target="_blank" rel="noopener">Code</a>
+                <a href="https://www.youtube.com/watch?v=J-OmU_ziYuY" target="_blank" rel="noopener">Talk</a>
+                <a href="https://ieeexplore.ieee.org/document/10610426/" target="_blank" rel="noopener">Publisher</a>
               </p>
-            </td>
-          </tr>        
-          
-<!-- ##### Paper 1 ##### -->
-          <tr onmouseout="edam_stop()" onmouseover="edam_start()">
-            <td width="33%" valign="top">
-                <img src="images/dran.jpeg"  width="100%" style="border-style: none">
-              </td>
-            
-            <td style="padding:20px;width:75%;vertical-align:middle">              
-                <strong><em><papertitle>Reuse your features: unifying retrieval and feature-metric alignment</papertitle></em></strong>
-              </a>
-              <br>
-              <strong>Javier Morlana</strong>, J.M.M. Montiel        
-              <br>
-              <a href="https://www.icra2023.org/"><em>ICRA</em></a>, 2023
-              <br>
-              <p></p>
-              <p>A pipeline that combines all the features needed for Visual Localization in a single network: Image Retrieval, Local Feature Matching and Re-ranking, and Feature-metric alignment.
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="fig"><img src="images/web/dran.jpg" width="1400" height="561" loading="lazy" decoding="async" alt="DRAN: a single network producing global descriptors, hierarchical features for re-ranking and dense features for alignment."></div>
+            <div class="body">
+              <h3>Reuse your features: unifying retrieval and feature-metric alignment</h3>
+              <p class="authors"><b>Javier Morlana</b>, J.M.M. Montiel</p>
+              <p class="venue">ICRA 2023</p>
+              <p class="links">
+                <a href="https://arxiv.org/abs/2204.06292" target="_blank" rel="noopener">Paper</a>
+                <a href="https://github.com/jmorlana/DRAN" target="_blank" rel="noopener">Code</a>
+                <a href="https://www.youtube.com/watch?v=CHLXBxlIue8" target="_blank" rel="noopener">Talk</a>
+                <a href="https://ieeexplore.ieee.org/document/10160501/" target="_blank" rel="noopener">Publisher</a>
               </p>
-            </td>
-          </tr>  
-          
-<!-- ##### Paper 0 ##### -->
-          <tr onmouseout="edam_stop()" onmouseover="edam_start()">
-            <td width="33%" valign="top">
-                <img src="images/sd_defslam.png"  width="100%" style="border-style: none">
-              </td>
-            
-            <td style="padding:20px;width:75%;vertical-align:middle">              
-                <strong><em><papertitle>SD-DefSLAM: Semi-Direct Monocular SLAM for Deformable and Intracorporeal Scenes</papertitle></em></strong>
-              </a>
-              <br>
-              Juan J. Gómez-Rodríguez, José Lamarca, <strong>Javier Morlana</strong>, Juan D. Tardós and José M.M. Montiel        
-              <br>
-              ICRA, 2021
-              <br>
-              <p></p>
-              <p>A Semi-Direct direct monocular SLAM system that is able to handle deformable and intracorporeal scenes. It is able to handle deformations, occlusions and to relocalize after tracking failures.
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="body">
+              <h3>Self-supervised Visual Place Recognition for Colonoscopy Sequences</h3>
+              <p class="authors"><b>Javier Morlana</b>, Pablo Azagra, Javier Civera, J.M.M. Montiel</p>
+              <p class="venue">MIDL 2021 · short paper</p>
+              <p class="links">
+                <a href="https://openreview.net/forum?id=tgkEqYyA12p" target="_blank" rel="noopener">Paper</a>
+                <a href="https://www.youtube.com/watch?v=dfZqJF4UZC8" target="_blank" rel="noopener">Talk</a>
+                <a href="https://2021.midl.io/papers/c3" target="_blank" rel="noopener">Publisher</a>
               </p>
-            </td>
-          </tr>
+            </div>
+          </article>
 
-
-
- <!-- </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:right;font-size:small;">                
-                <br>
-                Based on the <a href="https://github.com/jonbarron/website">Jon Barron</a>'s template.
+          <article class="card">
+            <div class="fig"><img src="images/web/sd_defslam.jpg" width="1400" height="469" loading="lazy" decoding="async" alt="SD-DefSLAM: semi-direct monocular SLAM tracking a deforming intracorporeal scene."></div>
+            <div class="body">
+              <h3>SD-DefSLAM: Semi-Direct Monocular SLAM for Deformable and Intracorporeal Scenes</h3>
+              <p class="authors">Juan J. Gómez-Rodríguez, José Lamarca, <b>Javier Morlana</b>, Juan D. Tardós, José M.M. Montiel</p>
+              <p class="venue">ICRA 2021</p>
+              <p class="links">
+                <a href="https://arxiv.org/abs/2010.09409" target="_blank" rel="noopener">Paper</a>
+                <a href="https://github.com/UZ-SLAMLab/SD-DefSLAM" target="_blank" rel="noopener">Code</a>
+                <a href="https://ieeexplore.ieee.org/document/9561512/" target="_blank" rel="noopener">Publisher</a>
               </p>
-            </td>
-          </tr>
-        </tbody></table>
-      </td>
-    </tr>
-  </table>
-</body> -->
+            </div>
+          </article>
 
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+
+          <article class="step">
+            <img class="mark" src="images/logos/endocartoscope.png" width="144" height="144" alt="">
+            <div class="entry">
+              <p class="when">2025-present</p>
+              <h3>Co-founder</h3>
+              <p class="org">EndoCartoScope · Universidad de Zaragoza</p>
+              <p class="where">Zaragoza, Spain</p>
+            </div>
+          </article>
+
+          <article class="step">
+            <img class="mark" src="images/logos/unizar.png" width="144" height="144" alt="">
+            <div class="entry">
+              <p class="when">2020-2025</p>
+              <h3>PhD in Computer Vision</h3>
+              <p class="org">Universidad de Zaragoza</p>
+              <p class="where">SLAM and visual place recognition for colonoscopy, advised by J.M.M. Montiel. Defended June 2025.</p>
+            </div>
+          </article>
+
+          <article class="step">
+            <img class="mark" src="images/logos/google.png" width="144" height="144" alt="">
+            <div class="entry">
+              <p class="when">Sep-Dec 2022</p>
+              <h3>Student Researcher</h3>
+              <p class="org">Google · Zurich, Switzerland</p>
+              <p class="where">SLAM aided by neural-network priors, in Federico Tombari's team.</p>
+            </div>
+          </article>
+
+          <article class="step">
+            <img class="mark" src="images/logos/leica.png" width="144" height="144" alt="">
+            <div class="entry">
+              <p class="when">Aug 2019-Feb 2020</p>
+              <h3>Visual-Inertial SLAM intern</h3>
+              <p class="org">Leica Geosystems · Switzerland</p>
+              <p class="where">Built the Leica-UZ visual-inertial SLAM library, combining VI-ORB-SLAM and VINS-Mono.</p>
+            </div>
+          </article>
+
+          <article class="step">
+            <img class="mark" src="images/logos/unizar.png" width="144" height="144" alt="">
+            <div class="entry">
+              <p class="when">Oct 2017-Jun 2018</p>
+              <h3>Research grant</h3>
+              <p class="org">Universidad de Zaragoza</p>
+              <p class="where">Extended ORB-SLAM to non-rigid scenes.</p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="site-foot">
+    <div class="foot-in">
+      <div>
+        <p class="foot-name"><svg class="foot-mark" aria-hidden="true"><use href="#i-jm"/></svg>Javier Morlana</p>
+        <p class="foot-line">SLAM for endoscopy · Zaragoza, Spain</p>
+      </div>
+      <div class="foot-right">
+        <div class="icons dark">
+          <a class="ic" href="mailto:jmorlana@unizar.es" aria-label="Email"><svg><use href="#i-mail"/></svg></a>
+          <a class="ic" href="https://scholar.google.es/citations?user=1-DJMB8AAAAJ&amp;hl" aria-label="Google Scholar" target="_blank" rel="noopener"><svg><use href="#i-scholar"/></svg></a>
+          <a class="ic" href="https://github.com/jmorlana/" aria-label="GitHub" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg></a>
+          <a class="ic" href="https://www.linkedin.com/in/javiermorlana/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg><use href="#i-linkedin"/></svg></a>
+        </div>
+        <p class="foot-line">© 2026 · <a href="mailto:jmorlana@unizar.es">jmorlana@unizar.es</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      if (!('IntersectionObserver' in window)) return;
+
+      // Highlight, in the top bar, the section currently in view.
+      var links = Array.prototype.slice.call(document.querySelectorAll('.nav a'))
+        .filter(function (a) { return /^#.+/.test(a.getAttribute('href') || ''); });
+      var sections = links
+        .map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)); })
+        .filter(Boolean);
+
+      if (sections.length) {
+        var visible = new Set();
+        var spy = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) visible.add(e.target); else visible.delete(e.target);
+          });
+          var current = sections.filter(function (s) { return visible.has(s); })[0];
+          if (!current) return;
+          links.forEach(function (a) {
+            a.classList.toggle('on', a.getAttribute('href') === '#' + current.id);
+          });
+        }, { rootMargin: '-25% 0px -65% 0px' });
+        sections.forEach(function (s) { spy.observe(s); });
+      }
+
+      // Draw each timeline and bring in its steps as they enter the viewport.
+      var lines = new IntersectionObserver(function (entries, o) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          e.target.classList.add('in');
+          o.unobserve(e.target);
+        });
+      }, { rootMargin: '0px 0px -40px 0px' });
+      Array.prototype.forEach.call(document.querySelectorAll('.timeline'), function (t) { lines.observe(t); });
+
+      var reveal = new IntersectionObserver(function (entries, o) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          e.target.classList.add('in');
+          o.unobserve(e.target);
+        });
+      }, { rootMargin: '0px 0px -60px 0px' });
+      Array.prototype.forEach.call(document.querySelectorAll('.step'), function (s) { reveal.observe(s); });
+
+      // The top bar gets its bottom rule once the masthead has scrolled away.
+      var masthead = document.querySelector('.masthead');
+      var bar = document.querySelector('.topbar');
+      if (masthead && bar) {
+        new IntersectionObserver(function (entries) {
+          bar.classList.toggle('scrolled', !entries[0].isIntersecting);
+        }, { rootMargin: '-40px 0px 0px 0px' }).observe(masthead);
+      }
+    })();
+  </script>
+</body>
 </html>
